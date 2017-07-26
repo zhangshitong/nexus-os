@@ -7,7 +7,7 @@ ENV NEXUS_HOME /opt/nexus/nexus
 ENV NEXUS_WORK /sonatype-work
 ENV NEXUS_REPOS /repositories
 
-RUN cd /var/tmp && curl --location --retry 2 -O ftp://192.168.102.52/rpm/jdk-8u141-linux-x64.rpm
+RUN cd /var/tmp && curl --location --retry 2 -O http://121.41.224.94:8479/raw/i-micro-service.git/master/jdk-8u141-linux-x64.rpm
 
 RUN cd /var/tmp \
   rpm -Ui jdk-8u141-linux-x64.rpm \
