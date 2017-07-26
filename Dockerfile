@@ -13,6 +13,8 @@ ENV NEXUS_REPOS /repositories
   #rpm -Ui jdk-8u141-linux-x64.rpm \
   #&& rm -rf jdk-8u141-linux-x64.rpm
 
+RUN ping github.com
+
 # Install jq
 RUN curl --fail --silent --location --retry 3 \
     https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 \
