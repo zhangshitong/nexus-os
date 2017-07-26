@@ -10,8 +10,8 @@ ENV NEXUS_REPOS /repositories
 RUN cd /var/tmp \
   && curl --fail --silent --location --retry 3 -O \
   ftp://192.168.102.52/rpm/jdk-8u141-linux-x64.rpm \
-  && rpm -Ui jdk-8u101-linux-x64.rpm \
-  && rm -rf jdk-8u101-linux-x64.rpm
+  && rpm -Ui jdk-8u141-linux-x64.rpm \
+  && rm -rf jdk-8u141-linux-x64.rpm
 
 # Install jq
 RUN curl --fail --silent --location --retry 3 \
